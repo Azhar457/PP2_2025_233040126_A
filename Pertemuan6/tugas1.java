@@ -21,7 +21,11 @@ public class tugas1 {
             });
             
             west.addActionListener(e -> {
+                if (label.getText().equals("Tombol West di Klik")) {
+                    label.setText("Label");
+                } else {
                 label.setText("Tombol West di Klik");
+                }
             });
             south.addActionListener(e -> {
                 label.setText("Tombol South di Klik");
