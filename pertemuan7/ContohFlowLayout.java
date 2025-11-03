@@ -1,4 +1,4 @@
-package pertemuan7;
+package id.unpas.ac.id.pertemuan7;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
