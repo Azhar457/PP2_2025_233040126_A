@@ -1,8 +1,10 @@
 import java.awt.BorderLayout;
+import javax.swing.Icon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.SwingUtilities;
+import javax.swing.plaf.IconUIResource;
 public class tugas1 {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() {
@@ -10,12 +12,15 @@ public class tugas1 {
             JFrame frame = new JFrame();
             frame.setTitle("Tugas 1 Komponen Gui Dasar");
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            frame.setSize(400, 200);
+            frame.setSize(400, 300);
             JButton center = new JButton("Tombol Center");
             JButton west = new JButton("Tombol West");
             JButton south = new JButton("Tombol South");
             JButton east = new JButton("Tombol East");
-            JLabel label = new JLabel("Label");
+            JLabel label = new JLabel("Label",JLabel.CENTER);
+            
+           frame.add(label,BorderLayout.NORTH);
+            frame.add(center);
             center.addActionListener(e -> {
                 label.setText("Tombol Center di Klik");
             });
